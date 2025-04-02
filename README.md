@@ -55,26 +55,26 @@ Nota: El uso de los recursos es obligatorio, excepto aquellos marcados como opci
 # Arquitectura del Proyecto: 
 
   - El árbol de archivos si el desarrollo es puro será el siguiente:
-    
+        
 app_de_ecommerce_de_ropa/
 ├── css/
-│ ├── style.css
-│ ├── detail.css
-│ ├── checkout.css
-│ └── variables.css
+│   ├── style.css
+│   ├── detail.css
+│   ├── checkout.css
+│   └── variables.css
 ├── js/
-│ ├── Components/
-│ │ └── modal.js # Archivos según los componentes que crees (Opcional)
-│ ├── main.js
-│ ├── detail.js
-│ └── checkout.js
+│   ├── Components/
+│   │   └── modal.js  # Archivos según los componentes que crees (Opcional)
+│   ├── main.js
+│   ├── detail.js
+│   └── checkout.js
 ├── storage/
-│ ├── font/
-│ │ └── encode_sans/
-│ └── img/
+│   ├── font/
+│   │   └── encode_sans/
+│   └── img/
 ├── views/
-│ ├── detail.html
-│ └── checkout.html
+│   ├── detail.html
+│   └── checkout.html
 └── index.html
 
 - GitHub: Se utilizará para la gestión de versiones del código durante el desarrollo, aplicando conventional commits.
