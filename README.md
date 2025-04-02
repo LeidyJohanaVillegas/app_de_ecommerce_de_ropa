@@ -55,7 +55,7 @@ Nota: El uso de los recursos es obligatorio, excepto aquellos marcados como opci
 # Arquitectura del Proyecto: 
 
   - El árbol de archivos si el desarrollo es puro será el siguiente:
-        
+```        
 app_de_ecommerce_de_ropa/
 ├── css/
 │   ├── style.css
@@ -76,6 +76,7 @@ app_de_ecommerce_de_ropa/
 │   ├── detail.html
 │   └── checkout.html
 └── index.html
+```
 
 - GitHub: Se utilizará para la gestión de versiones del código durante el desarrollo, aplicando conventional commits.
 
