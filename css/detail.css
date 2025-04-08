@@ -148,6 +148,16 @@ body {
     cursor: pointer;
     font-size: 13px;
 }
+.colores:hover{
+    top: 1rem;
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    align-items: center;
+    font-size: 13px;
+}
 .footer {
     position: fixed;
     width: 80%;
@@ -174,7 +184,97 @@ body {
 }
 a {
     text-align: center;
-    justify-content: center;color: #ddd;
+    justify-content: center;
+    color: #ddd;
     text-decoration: none;
     align-items: center;
+}
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .card {
+        bottom: 0;
+        border-radius: 12px;
+        display: flex;
+        text-align: center;
+    }
+
+    .icon_product {
+        top: 10px;
+        left: 10px;
+        right: 10px;
+    }
+
+    .iconPro, .iconProRev {
+        width: 40px;
+        height: 40px;
+    }
+
+    .iconPro img {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .imgP {
+        align-items: center;
+    }
+
+    .info {
+        padding: 15px;
+        width: 50vw;
+    }
+
+    .titleView h2 {
+        font-size: 18px;
+    }
+
+    .titleView .rating {
+        font-size: 12px;
+    }
+
+    .quantity {
+        gap: 8px;
+    }
+
+    .quantity button {
+        width: 24px;
+        height: 24px;
+        font-size: 16px;
+    }
+
+    .Size-button,
+    .color-button {
+        width: 26px;
+        height: 26px;
+        font-size: 12px;
+    }
+
+    .colores:hover {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer {
+        width: 95%;
+        padding: 8px 20px;
+    }
+
+    .bar {
+        gap: 15px;
+    }
+
+    .shopping-car {
+        width: 20px;
+        height: 20px;
+    }
+
+    .description {
+        font-size: 13px;
+    }
+
+    .description .readMore {
+        font-size: 13px;
+    }
 }

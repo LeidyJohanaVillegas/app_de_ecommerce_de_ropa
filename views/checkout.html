@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/checkout.css">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+    <title>Checkout Ecommerce de ropa</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button class="buttonL">
+                <a href="/index.html">
+                    <img class="iconL" src="/storage/img/index/icon/rev.png">
+                </a>
+            </button>
+            <h2 class="checkout">Checkout</h2>
+            <button class="buttonR">
+                <img class="iconR" src="/storage/img/index/icon/menu.png">
+            </button>
+        </div>
+        <div class="container1">
+            <div class="photo">
+                <img class="photo-img"  src="/storage/img/index/image1.png" alt="ropa de moda">
+            </div>
+            <div class="info">                    
+                <div class="row">
+                    <div class="info-clothes">
+                        <h2 class="title">Modern Light Clothes</h2>
+                        <p >Dress Modern</p>
+                    </div>
+                    <div class="icon-photo-img-">
+                        <img src="/storage/img/index/icon/puntosSusp.png" class="icon-photo-img" >
+                    </div>
+                    <div class="cash">
+                        <p>$212.99</p>
+                    </div>
+                    <div class="quantity">
+                        <button><img src="/storage/img/index/icon/menos.png" class="quantity-icon" onclick="decreaseQuantity()"></button>
+                        <span id="quantity">4</span>
+                        <button><img src="/storage/img/index/icon/mas.png" class="quantity-icon" onclick="increaseQuantity()"></button>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <hr>
+        <div class="container1">
+            <div class="photo">
+                <img class="photo-img"  src="/storage/img/index/image2.png" alt="gabardina">
+            </div>
+            <div class="info">                    
+                <div class="row">
+                    <div class="info-clothes">
+                        <h2 class="title">Light Dress Bless</h2>
+                        <p >Dress Modern</p>
+                    </div>
+                    <div class="icon-photo-img-">
+                        <img src="/storage/img/index/icon/puntosSusp.png" class="icon-photo-img" >
+                    </div>
+                    <div class="cash">
+                        <p>$200.99</p>
+                    </div>
+                    <div class="quantity">
+                        <button><img src="/storage/img/index/icon/menos.png" class="quantity-icon" onclick="decreaseQuantity()"></button>
+                        <span id="quantity">2</span>
+                        <button><img src="/storage/img/index/icon/mas.png" class="quantity-icon" onclick="increaseQuantity()"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="checkoutPay">
+            <div class="shipping">
+                <h3 class="title"><strong>Shipping Information</strong></h3>
+                <img class="visa-card" src="/storage/img/index/icon/card.png">
+            </div>
+            <div class="info-shopping">
+                <div class="N1">
+                    <p class="item">Total (9 tiems)
+                    <p class="resul"><strong>$1,014.95</strong></p></p>
+                </div>
+                <div class="N1">
+                    <p class="item">Shipping Fee  
+                    <p class="result"><strong>$.0.00</strong></p></p>
+                </div>
+                <div class="N1">
+                    <p class="item">Discount
+                    <p class="result"> <strong>$.0.00</strong></p></p> 
+                </div>
+                <hr>
+                <div class="N2">
+                    <p class="item">Sub-Total
+                    <p class="item-result"><strong>$1,014.95</strong></p></p>
+                </div>
+            </div>
+            <div class="container-pay">
+                <button class="pay">
+                    <a href="" id="pagarLink">
+                        <strong>Pay</strong>
+                    </a>
+                </button>
+            </div>
+        </div>
+            <template id="template">
+                <swal-title>Pago realizado con exito</swal-title>
+                <swal-icon type="success" color="green"></swal-icon>
+                <swal-button type="confirm">OK</swal-button>
+                <swal-button type="cancel">Cancel</swal-button>
+                <swal-param name="allowEscapeKey" value="false" />
+                <swal-param name="customClass" value='{ "popup": "my-popup" }' />
+                <swal-function-param name="didOpen" value="popup => console.log(popup)" />
+            </template>
+            <script src="checkout.js"></script>
+    </div>
+
+</body>
+</html>
